@@ -1,0 +1,120 @@
+.header {
+  background: #232323;
+}
+
+.background-header {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  background: var(--white) !important;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+  transition: all linear 0.5s;
+  z-index: 9999;
+}
+
+.background-header .navbar-brand h2 {
+  color: #121212 !important;
+}
+
+.background-header .navbar-list .navbar-link {
+  color: #1e1e1e !important;
+}
+
+.background-header .navbar-list .navbar-link:hover,
+.background-header .navbar-list .navbar-link.active {
+  color: var(--primary) !important;
+}
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 100;
+  padding: 22px 0px;
+}
+
+.navbar-left .navbar-brand h2 {
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  font-weight: 700;
+  transition: all 0.3s ease 0s;
+}
+
+.navbar-left .navbar-brand h2 em {
+  font-style: normal;
+  color: var(--primary);
+}
+
+.navbar-right .navbar-list {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right .navbar-item {
+  margin: 0px 15px;
+}
+
+.navbar-right .navbar-item .navbar-link {
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: var(--white);
+  transition: all 0.5s;
+  margin-top: 5px;
+  padding: 0 8px;
+}
+
+.navbar-right .navbar-list .navbar-link:hover,
+.navbar-right .navbar-list .navbar-link.active {
+  padding-bottom: 26px;
+  border-bottom: 3px solid var(--primary);
+}
+
+/*-----------------------------------
+        Footer
+-------------------------------------*/
+.footer {
+  text-align: center;
+  background: #eee;
+}
+
+.footer .inner-content {
+  border-top: 2px solid #eee;
+  margin-top: 20px;
+  padding: 20px 0px;
+}
+
+.footer .inner-content a {
+  color: var(--primary);
+  margin-left: 3px;
+  font-weight: 700;
+}
+
+/*-----------------------------------
+          All Page
+-------------------------------------*/
+.page-heading {
+  padding: 210px 0px 130px 0px;
+  text-align: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-heading .text-content h4 {
+  color: var(--primary);
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.page-heading .text-content h2 {
+  color: var(--white);
+  font-size: 6.2rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
