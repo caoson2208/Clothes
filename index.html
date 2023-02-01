@@ -9,9 +9,10 @@
     <!-- Main StyleSheet CSS -->
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/grid.css" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/owl.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
 
     <!-- Font Awesome -->
     <link
@@ -44,7 +45,7 @@
               >
             </div>
 
-            <div class="navbar-right">
+            <div class="navbar-right hide-on-mobile-tablet">
               <ul class="navbar-list">
                 <li class="navbar-item">
                   <a class="navbar-link active" href="index.html">Home</a>
@@ -57,10 +58,38 @@
                   <a class="navbar-link" href="about.html">About Us</a>
                 </li>
                 <li class="navbar-item">
-                  <a class="navbar-link" href="about.html">Contact Us</a>
+                  <a class="navbar-link" href="contact.html">Contact Us</a>
                 </li>
               </ul>
             </div>
+
+            <!-- navbar-moble-tablet -->
+            <div class="navbar__bars-btn hide-on-pc">
+              <label for="navbar-btn--input" class="navbar-btn">
+                <i class="fas fa-bars fa-2x"></i>
+              </label>
+              <input
+                type="checkbox"
+                hidden
+                name="btn"
+                id="navbar-btn--input"
+                class="navbar-input"
+              />
+              <label for="navbar-btn--input" class="navbar__overlay"></label>
+
+              <nav class="navbar__mobile">
+                <label for="navbar-btn--input" class="navbar__mobile-close">
+                  <i class="fas fa-times fa-2x"></i>
+                </label>
+                <ul>
+                  <li><a class="active" href="index.html">Home</a></li>
+                  <li><a href="products.html">Our Products</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+            <!-- End navbar-moble-tablet -->
           </nav>
         </div>
       </header>
@@ -289,7 +318,7 @@
           </div>
           <div class="row">
             <div
-              class="col l-6 m-6 c-12"
+              class="col l-6 m-12 c-12"
               data-aos="fade-down"
               data-aos-delay="800"
             >
@@ -312,7 +341,7 @@
               </div>
             </div>
             <div
-              class="col l-6 m-6 c-12"
+              class="col l-6 m-12 c-12"
               data-aos="zoom-in"
               data-aos-delay="500"
             >
@@ -329,7 +358,7 @@
       <div class="call-to-action">
         <div class="grid wide">
           <div class="row">
-            <div class="col l-12">
+            <div class="col l-12 m-12 c-12">
               <div class="inner-content">
                 <div class="row">
                   <div class="col l-8">
@@ -379,28 +408,14 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
 
     <!-- All JS -->
     <script src="./assets/js/main.js"></script>
     <!-- Banner -->
-    <script src="./assets/js/owl.js"></script>
-    <script src="./assets/js/slick.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <!-- Filter Product -->
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-
-    <script language="text/Javascript">
-      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
-      function clearField(t) {
-        //declaring the array outside of the
-        if (!cleared[t.id]) {
-          // function makes it static and global
-          cleared[t.id] = 1; // you could use true and false, but that's more typing
-          t.value = ""; // with more chance of typos
-          t.style.color = "#fff";
-        }
-      }
-    </script>
   </body>
 </html>

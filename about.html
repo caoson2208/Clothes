@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ngọc Sơn Shop</title>
+
+    <!-- Main StyleSheet CSS -->
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/owl.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- Animate CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="main">
+      <!-- ***** Start Preloader  ***** -->
+      <div id="preloader">
+        <div class="jumper">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <!-- ***** End Preloader ***** -->
+
+      <!-- Start header -->
+      <header class="header">
+        <div class="grid wide">
+          <nav class="navbar row">
+            <div class="navbar-left">
+              <a class="navbar-brand" href="index.html"
+                ><h2>Ngọc Sơn <em>Clothing</em></h2></a
+              >
+            </div>
+
+            <div class="navbar-right hide-on-mobile-tablet">
+              <ul class="navbar-list">
+                <li class="navbar-item">
+                  <a class="navbar-link" href="index.html">Home</a>
+                  <!-- <span class="sr-only">(current)</span> -->
+                </li>
+                <li class="navbar-item">
+                  <a class="navbar-link" href="products.html">Our Products</a>
+                </li>
+                <li class="navbar-item">
+                  <a class="navbar-link active" href="about.html">About Us</a>
+                </li>
+                <li class="navbar-item">
+                  <a class="navbar-link" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <!-- navbar-moble-tablet -->
+            <div class="navbar__bars-btn hide-on-pc">
+              <label for="navbar-btn--input" class="navbar-btn">
+                <i class="fas fa-bars fa-2x"></i>
+              </label>
+              <input
+                type="checkbox"
+                hidden
+                name="btn"
+                id="navbar-btn--input"
+                class="navbar-input"
+              />
+              <label for="navbar-btn--input" class="navbar__overlay"></label>
+
+              <nav class="navbar__mobile">
+                <label for="navbar-btn--input" class="navbar__mobile-close">
+                  <i class="fas fa-times fa-2x"></i>
+                </label>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="products.html">Our Products</a></li>
+                  <li><a class="active" href="about.html">About Us</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+            <!-- End navbar-moble-tablet -->
+          </nav>
+        </div>
+      </header>
+      <!-- End header -->
+
+      <!-- Start Page Content -->
+      <div class="page-heading about-heading header-text">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-12 c-12 c-12">
+              <div class="text-content">
+                <h4>about us</h4>
+                <h2>our company</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Page Content -->
+
+      <!-- Start Features -->
+      <div class="features about-features">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-12 m-12 c-12" data-aos="flip-down">
+              <div class="heading">
+                <h2 class="title">Our Background</h2>
+              </div>
+            </div>
+
+            <div class="row">
+              <div
+                class="col l-6 m-12 c-12"
+                data-aos="zoom-in"
+                data-aos-delay="500"
+              >
+                <div class="right-image">
+                  <img src="assets/images/feature-image.jpg" alt="" />
+                </div>
+              </div>
+              <div
+                class="col l-6 m-12 c-12"
+                data-aos="fade-down"
+                data-aos-delay="800"
+              >
+                <div class="left-content">
+                  <h4 class="title">Who we are &amp; What we do?</h4>
+                  <p class="desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Sed voluptate nihil eum consectetur similique? Consectetur,
+                    quod, incidunt, harum nisi dolores delectus reprehenderit
+                    voluptatem perferendis dicta dolorem non blanditiis ex
+                    fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit.<br /><br />Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Et, consequuntur, modi mollitia corporis
+                    ipsa voluptate corrupti eum ratione ex ea praesentium
+                    quibusdam? Aut, in eum facere corrupti necessitatibus
+                    perspiciatis quis.
+                  </p>
+                  <ul class="social-icons">
+                    <li>
+                      <a href="#"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-behance"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Features -->
+
+      <!-- Start Team Member -->
+      <div class="team-members">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-12 m-12 c-12" data-aos="flip-down">
+              <div class="heading">
+                <h2 class="title">Our Team Members</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col l-4 m-6 c-12" data-aos="fade-up">
+              <div class="team-member">
+                <div class="thumb-container">
+                  <img src="assets/images/team_01.jpg" alt="" />
+                  <div class="hover-effect">
+                    <div class="hover-content">
+                      <ul class="social-icons">
+                        <li>
+                          <a href="#"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fab fa-behance"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="down-content">
+                  <h4>Johnny William</h4>
+                  <span>CO-Founder</span>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing itaque
+                    corporis nulla.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col l-4 m-6 c-12" data-aos="fade-up">
+              <div class="team-member">
+                <div class="thumb-container">
+                  <img src="assets/images/team_02.jpg" alt="" />
+                  <div class="hover-effect">
+                    <div class="hover-content">
+                      <ul class="social-icons">
+                        <li>
+                          <a href="#"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fab fa-behance"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="down-content">
+                  <h4>Karry Pitcher</h4>
+                  <span>Product Expert</span>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing itaque
+                    corporis nulla.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col l-4 m-6 c-12" data-aos="fade-up">
+              <div class="team-member">
+                <div class="thumb-container">
+                  <img src="assets/images/team_03.jpg" alt="" />
+                  <div class="hover-effect">
+                    <div class="hover-content">
+                      <ul class="social-icons">
+                        <li>
+                          <a href="#"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fab fa-behance"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="down-content">
+                  <h4>Michael Soft</h4>
+                  <span>Chief Marketing</span>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing itaque
+                    corporis nulla.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col l-4 m-6 c-12" data-aos="fade-up">
+              <div class="team-member">
+                <div class="thumb-container">
+                  <img src="assets/images/team_04.jpg" alt="" />
+                  <div class="hover-effect">
+                    <div class="hover-content">
+                      <ul class="social-icons">
+                        <li>
+                          <a href="#"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fab fa-behance"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="down-content">
+                  <h4>Mary Cool</h4>
+                  <span>Product Specialist</span>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing itaque
+                    corporis nulla.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col l-4 m-6 c-12" data-aos="fade-up">
+              <div class="team-member">
+                <div class="thumb-container">
+                  <img src="assets/images/team_05.jpg" alt="" />
+                  <div class="hover-effect">
+                    <div class="hover-content">
+                      <ul class="social-icons">
+                        <li>
+                          <a href="#"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fab fa-behance"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="down-content">
+                  <h4>George Walker</h4>
+                  <span>Product Photographer</span>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing itaque
+                    corporis nulla.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col l-4 m-6 c-12" data-aos="fade-up">
+              <div class="team-member">
+                <div class="thumb-container">
+                  <img src="assets/images/team_06.jpg" alt="" />
+                  <div class="hover-effect">
+                    <div class="hover-content">
+                      <ul class="social-icons">
+                        <li>
+                          <a href="#"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fab fa-behance"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="down-content">
+                  <h4>Kate Town</h4>
+                  <span>General Manager</span>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing itaque
+                    corporis nulla.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Team Member -->
+
+      <!-- Start Services -->
+      <div class="services">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-4 m-6 c-12" data-aos="fade-up">
+              <div class="service-item">
+                <div class="images">
+                  <img src="./assets/images/team_01.jpg" alt="1" />
+                </div>
+                <div class="down-content">
+                  <h4 class="title">Product Management</h4>
+                  <p class="desc">
+                    Lorem ipsum dolor sit amet, consectetur an adipisicing elit.
+                    Itaque, corporis nulla at quia quaerat.
+                  </p>
+                  <a href="#" class="filled-button">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col l-4 m-6 c-12" data-aos="fade-up">
+              <div class="service-item">
+                <div class="images">
+                  <img src="./assets/images/team_02.jpg" alt="2" />
+                </div>
+                <div class="down-content">
+                  <h4 class="title">Customer Relations</h4>
+                  <p class="desc">
+                    Lorem ipsum dolor sit amet, consectetur an adipisicing elit.
+                    Itaque, corporis nulla at quia quaerat.
+                  </p>
+                  <a href="#" class="filled-button">Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="col l-4 m-6 c-12" data-aos="fade-up">
+              <div class="service-item">
+                <div class="images">
+                  <img src="./assets/images/team_03.jpg" alt="3" />
+                </div>
+                <div class="down-content">
+                  <h4 class="title">Global Collection</h4>
+                  <p class="desc">
+                    Lorem ipsum dolor sit amet, consectetur an adipisicing elit.
+                    Itaque, corporis nulla at quia quaerat.
+                  </p>
+                  <a href="#" class="filled-button">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Services -->
+
+      <!-- Start Happy Clients -->
+      <div class="happy-clients">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-12 m-12 c-12" data-aos="flip-down">
+              <div class="heading">
+                <h2 class="title">Happy Partners</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col l-12 m-12 c-12" data-aos="zoom-in">
+              <div class="owl-clients owl-carousel">
+                <div class="client-item">
+                  <img src="./assets/images/client-01.jpg" alt="1" />
+                </div>
+                <div class="client-item">
+                  <img src="./assets/images/client-02.jpg" alt="2" />
+                </div>
+                <div class="client-item">
+                  <img src="./assets/images/client-03.jpg" alt="3" />
+                </div>
+                <div class="client-item">
+                  <img src="./assets/images/client-04.jpg" alt="4" />
+                </div>
+                <div class="client-item">
+                  <img src="./assets/images/client-05.jpg" alt="5" />
+                </div>
+                <div class="client-item">
+                  <img src="./assets/images/client-06.jpg" alt="6" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Happy Clients -->
+
+      <!-- Start Footer -->
+      <footer class="footer">
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-12 m-12 c-12">
+              <div class="inner-content">
+                <p>Copyright &copy; 2023 All rights reserved</p>
+                <p>
+                  Design:
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100012578958261"
+                    target="_blank"
+                    >Ngọc Sơn</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </main>
+
+    <!-- Animate -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- All JS -->
+    <script src="./assets/js/main.js"></script>
+    <!-- Banner -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Filter Product -->
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  </body>
+</html>

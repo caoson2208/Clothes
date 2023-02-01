@@ -1,6 +1,8 @@
 :root {
-  --primary: #f33f3f;
-  --white: #fff;
+  --primary-color: #f33f3f;
+  --white-color: #fff;
+  --black-color: #121212;
+  --shadow-color: #eee;
 }
 
 * {
@@ -56,6 +58,7 @@ ul {
   color: var(--white);
 }
 
+
 /*-----------------------------------
        Load Page
 -------------------------------------*/
@@ -68,7 +71,7 @@ ul {
   bottom: 0;
   position: fixed;
   z-index: 9999999;
-  color: #fff;
+  color: var(--white);
 }
 
 #preloader .jumper {
@@ -84,7 +87,7 @@ ul {
 }
 
 #preloader .jumper > div {
-  background-color: #fff;
+  background-color: var(--white);
   width: 10px;
   height: 10px;
   border-radius: 100%;
