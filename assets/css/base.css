@@ -58,7 +58,6 @@ ul {
   color: var(--white);
 }
 
-
 /*-----------------------------------
        Load Page
 -------------------------------------*/
@@ -139,4 +138,23 @@ ul {
   100% {
     opacity: 0;
   }
+}
+
+/*-----------------------------------
+       Go To Top
+-------------------------------------*/
+
+#go-to-top {
+  position: fixed;
+  background: var(--primary-color);
+  color: var(--white-color);
+  font-size: 1.8rem;
+  right: 25px;
+  bottom: 90px;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 52px;
 }

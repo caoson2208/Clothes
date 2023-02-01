@@ -1,8 +1,28 @@
 jQuery(document).ready(function ($) {
   "use strict";
+  /* ..............................................
+            Init Animate
+  ................................................. */
   AOS.init();
 
-  // Page loading animation
+  /* ..............................................
+             Go-To-Top
+  ................................................. */
+  $(window).on("scroll", function () {
+    if ($(this).scrollTop() > 100) {
+      $("#go-to-top").fadeIn();
+    } else {
+      $("#go-to-top").fadeOut();
+    }
+  });
+  $("#go-to-top").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, 600);
+    return false;
+  });
+
+  /* ..............................................
+             Page loading animation
+  ................................................. */
 
   $("#preloader").animate(
     {
@@ -16,6 +36,10 @@ jQuery(document).ready(function ($) {
     }
   );
 
+  /* ..............................................
+         Header when scroll
+    ................................................. */
+
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     var box = $(".header-text").height();
@@ -28,6 +52,9 @@ jQuery(document).ready(function ($) {
     }
   });
 
+  /* ..............................................
+         Slick Banner
+    ................................................. */
   if ($(".owl-banner").length) {
     $(".owl-banner").owlCarousel({
       loop: true,
@@ -58,6 +85,10 @@ jQuery(document).ready(function ($) {
       },
     });
   }
+
+  /* ..............................................
+         Slick Clients
+    ................................................. */
 
   if ($(".owl-clients").length) {
     $(".owl-clients").owlCarousel({
@@ -90,52 +121,9 @@ jQuery(document).ready(function ($) {
     });
   }
 
-  // if ($(".owl-testimonials").length) {
-  //   $(".owl-testimonials").owlCarousel({
-  //     loop: true,
-  //     nav: false,
-  //     dots: true,
-  //     items: 1,
-  //     margin: 30,
-  //     autoplay: false,
-  //     smartSpeed: 700,
-  //     autoplayTimeout: 6000,
-  //     responsive: {
-  //       0: {
-  //         items: 1,
-  //         margin: 0,
-  //       },
-  //       460: {
-  //         items: 1,
-  //         margin: 0,
-  //       },
-  //       576: {
-  //         items: 2,
-  //         margin: 20,
-  //       },
-  //       992: {
-  //         items: 2,
-  //         margin: 30,
-  //       },
-  //     },
-  //   });
-  // }
-
-  // $(".Modern-Slider").slick({
-  //   autoplay: true,
-  //   autoplaySpeed: 10000,
-  //   speed: 600,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   pauseOnHover: false,
-  //   dots: true,
-  //   pauseOnDotsHover: true,
-  //   cssEase: "linear",
-  //   // fade:true,
-  //   draggable: false,
-  //   prevArrow: '<button class="PrevArrow"></button>',
-  //   nextArrow: '<button class="NextArrow"></button>',
-  // });
+  /* ..............................................
+              Filter Product
+  ................................................. */
 
   var Container = $(".container");
   Container.imagesLoaded(function () {
@@ -151,6 +139,10 @@ jQuery(document).ready(function ($) {
       itemSelector: ".product-grid",
     });
   });
+
+  /* ..............................................
+             SlideDown Accordion
+  ................................................. */
 
   $(".accordion > li:eq(0) a").addClass("active").next().slideDown();
 
